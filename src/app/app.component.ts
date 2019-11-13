@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'DrivingSummaryUserInterface';
+  private http;
+  private baseUrl;
+  public startDate;
+  private email;
+
+  constructor(router: Router, http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
+      this.http = http;
+      this.baseUrl = baseUrl;
+      this.startDate = new Date();
+      this.email = "";
+  }
 }

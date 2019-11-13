@@ -118,8 +118,17 @@
               "devServerTarget": "DrivingSummaryUserInterface:serve:production"
             }
           }
+        },
+        "deploy": {
+            "builder": "angular-cli-ghpages:deploy",
+            "options": {
+                "baseHref": "https://GKunc.github.io/DrivingSummaryUserInterface/",
+                "name": "DrivingSummaryUserInterface",
+                "email": "gkunc@kent.edu"
+            }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "DrivingSummaryUserInterface"
 }
