@@ -14,9 +14,9 @@ export class AppComponent {
   public startDate;
   public email;
 
-  constructor(router: Router, http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
+  constructor(router: Router, http: HttpClient) {
       this.http = http;
-      this.baseUrl = baseUrl;
+      this.baseUrl = "https://gkunc.github.io/DrivingSummaryUserInterface/";
       this.startDate = new Date();
       this.email = "";
   }
