@@ -12,7 +12,7 @@ export class AppComponent {
   private http;
   private baseUrl;
   public startDate;
-  private email;
+  public email;
 
   constructor(router: Router, http: HttpClient, @Inject('BASE_URL') baseUrl: string) {
       this.http = http;
