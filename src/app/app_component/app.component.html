@@ -1,24 +1,6 @@
-<div class="container">
-  <form>
-    <div *ngIf="email.errors">
-      <label style="color: red">Email address not valid</label>
-    </div>
-    <label class="label-creator">Email</label>
-    <br/>
-    <input class="input-creator" type="text" name="email" email/>
-    <br/>
-
-    <label class="label-creator">File Name</label>
-    <br/>
-    <input class="input-creator"/>
-    <br/>
-
-    <label class="label-creator">Start Date</label>
-    <br/>
-    <input class="input-creator" type="date" name="date"/>
-    <br/>
-    <br/>
-
-    <button class="btn-creator">Send</button>
-</form>
-</div>
+<body>
+  <app-nav-menu></app-nav-menu>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</body>
