@@ -41,3 +41,11 @@ code {
   border-radius: 8px;
   width: 100%;
 }
+
+.btn-creator:hover {
+  cursor: pointer;
+}
+
+input {
+	min-height: 2rem;
+}
